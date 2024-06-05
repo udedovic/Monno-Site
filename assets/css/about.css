@@ -1,0 +1,43 @@
+.top-section .container,
+.bottom-section .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.top-section {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.bottom-section {
+  overflow-x: auto; /* Omogućava horizontalno skrolovanje */
+  -webkit-overflow-scrolling: touch; /* Poboljšava skrolovanje na mobilnim uređajima */
+}
+
+.profile {
+  flex: 0 0 auto; /* Sprečava automatsko rastezanje profila */
+  max-width: 100%; /* Postavlja maksimalnu širinu profila */
+  padding: 0 10px; /* Dodaje malo prostora između profila */
+}
+
+.profile img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+@media (max-width: 1000px) {
+  .bottom-section .row {
+    flex-wrap: nowrap; /* Sprečava prelazak u novi red */
+    justify-content: flex-start; /* Postavlja poravnanje na početak */
+  }
+
+  .bottom-section .profile {
+    flex: 0 0 100%; /* Postavlja širinu profila na 100% */
+    max-width: 100%; /* Postavlja maksimalnu širinu profila */
+  }
+}

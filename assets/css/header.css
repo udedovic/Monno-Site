@@ -1,0 +1,69 @@
+.logo {
+  height: 50px;
+  width: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.navbar {
+  background: #333;
+  color: white;
+  width: 100% !important;
+}
+
+.navbar ul {
+  display: flex;
+  margin: unset;
+  padding: unset;
+  list-style: none;
+}
+
+.navbar a {
+  padding: 0.5rem;
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navbar a:hover {
+  background: white;
+  color: #333;
+  border-radius: 10px;
+}
+
+.navbar .hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+.navbar .hamburger .icon-close {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  .navbar.open ul {
+    display: block;
+  }
+
+  .navbar.open a {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .navbar .hamburger {
+    display: block;
+  }
+
+  .navbar.open .hamburger .icon-open {
+    display: none;
+  }
+
+  .navbar.open .hamburger .icon-close {
+    display: block;
+  }
+}

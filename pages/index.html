@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monno Clothing</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../assets/css/index.css" />
+    <link rel="stylesheet" href="../assets/css/header.css" />
+    <link rel="stylesheet" href="../assets/fonts/fonts.css" />
+  </head>
+  <body>
+    <nav id="navbar" class="navbar">
+      <div class="d-flex align-items-center">
+        <a class="navbar-brand mx-2" href="../pages/index.html">Monno</a>
+        <a
+          class="nav-link"
+          href="https://www.instagram.com/monno_clothing"
+          target="_blank"
+        >
+          <abbr title="Instagram">
+            <i class="fab fa-instagram"></i>
+          </abbr>
+        </a>
+        <a class="nav-link" href="#" target="_blank">
+          <abbr title="TikTok">
+            <i class="fab fa-tiktok"></i>
+          </abbr>
+        </a>
+        <a class="nav-link" href="clothingmonno@gmail.com">
+          <abbr title="Mail">
+            <i class="fas fa-envelope"></i>
+          </abbr>
+        </a>
+      </div>
+      <ul>
+        <li><a href="../pages/index.html">Početna</a></li>
+        <li><a href="../pages/about.html">O nama</a></li>
+        <li><a href="../pages/contact.html">Kontakt</a></li>
+      </ul>
+
+      <button id="hamburger-toggle" class="hamburger header-button">
+        <i class="icon-open fa-solid fa-bars"></i>
+        <i class="icon-close fa-solid fa-x"></i>
+      </button>
+    </nav>
+    <main class="d-flex flex-column justify-content-center">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="2000444"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../assets/images/carousel1.JPG" alt="Image 1" />
+            <div class="carousel-caption">
+              <h1>Choose well, make it stay</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/images/carousel2.JPG" alt="Image 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/images/carousel3.JPG" alt="Image 3" />
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/images/carousel4.JPG" alt="Image 4" />
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/images/carousel5.JPG" alt="Image 5" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Prethodna</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Sledeća</span>
+        </button>
+        <ol class="carousel-indicators">
+          <li
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide-to="0"
+            class="active"
+          ></li>
+          <li
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide-to="1"
+          ></li>
+          <li
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide-to="2"
+          ></li>
+          <li
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide-to="3"
+          ></li>
+          <li
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide-to="4"
+          ></li>
+        </ol>
+      </div>
+
+      <div class="four-images my-4">
+        <div class="container">
+          <div class="row d-flex flex-nowrap flex-lg-wrap">
+            <div class="col-6 col-lg-3 d-flex flex-column align-items-center">
+              <div class="image-container">
+                <img src="../assets/images/image1.JPG" alt="Prva slika" />
+                <img
+                  src="../assets/images/image2.JPG"
+                  alt="Druga slika"
+                  class="hover-image"
+                />
+                <label class="image-label">Cena: 1000 RSD</label>
+              </div>
+              <label for="sweet-salty" class="font-weight-bold mt-1"
+                >Pretty In Pink</label
+              >
+            </div>
+            <div class="col-6 col-lg-3 d-flex flex-column align-items-center">
+              <div class="image-container">
+                <img src="../assets/images/image3.JPG" alt="Treća slika" />
+                <img
+                  src="../assets/images/image4.JPG"
+                  alt="Četvrta slika"
+                  class="hover-image"
+                />
+                <label class="image-label">Cena: 1200 RSD</label>
+              </div>
+              <label for="pretty-pink" class="font-weight-bold mt-1"
+                >Sweet & Salty</label
+              >
+            </div>
+            <div class="col-6 col-lg-3 d-flex flex-column align-items-center">
+              <div class="image-container">
+                <img src="../assets/images/image5.JPG" alt="Peta slika" />
+                <img
+                  src="../assets/images/image6.JPG"
+                  alt="Šesta slika"
+                  class="hover-image"
+                />
+                <label class="image-label">Cena: 1500 RSD</label>
+              </div>
+              <label for="red-ginger" class="font-weight-bold mt-1"
+                >Red Ginger</label
+              >
+            </div>
+            <div class="col-6 col-lg-3 d-flex flex-column align-items-center">
+              <div class="image-container">
+                <img src="../assets/images/image7.JPG" alt="Sedma slika" />
+                <img
+                  src="../assets/images/image8.JPG"
+                  alt="Osma slika"
+                  class="hover-image"
+                />
+                <label class="image-label">Cena: 1800 RSD</label>
+              </div>
+              <label for="forest-flame" class="font-weight-bold mt-1"
+                >Forest Flame</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        class="full-width-image"
+        src="../assets/images/full_width1.JPG"
+        alt="Full Width Image 1"
+      />
+
+      <div class="image-gallery my-2">
+        <div class="image-row">
+          <div class="image-col">
+            <img
+              src="../assets/images/image1.JPG"
+              alt="Prva slika"
+              class="responsive-image"
+            />
+          </div>
+          <div class="image-col">
+            <img
+              src="../assets/images/image2.JPG"
+              alt="Druga slika"
+              class="responsive-image"
+            />
+          </div>
+          <div class="image-col">
+            <img
+              src="../assets/images/image3.JPG"
+              alt="Treća slika"
+              class="responsive-image"
+            />
+          </div>
+          <div class="image-col">
+            <img
+              src="../assets/images/image4.JPG"
+              alt="Četvrta slika"
+              class="responsive-image"
+            />
+          </div>
+        </div>
+      </div>
+
+      <img
+        class="full-width-image"
+        src="../assets/images/full_width2.JPG"
+        alt="Full Width Image 2"
+      />
+    </main>
+
+    <footer class="navbar-dark bg-dark text-white py-3">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-4">
+            <h5>Monno Clothing</h5>
+            <p>
+              Kontakt telefon:
+              <a href="tel:060-7198-658" target="_blank">060-7198-658</a>
+            </p>
+          </div>
+
+          <ul class="navbar-nav col-4">
+            <li>
+              <a class="nav-link" href="../pages/index.html">Početna</a>
+            </li>
+            <li>
+              <a class="nav-link" href="../pages/about.html">O nama</a>
+            </li>
+            <li>
+              <a class="nav-link" href="../pages/contact.html">Kontakt</a>
+            </li>
+          </ul>
+
+          <div class="col-4 navbar-nav">
+            <h5>Linkovi</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  class="nav-link"
+                  href="https://www.instagram.com/monno_clothing"
+                  target="_blank"
+                >
+                  <i class="fab fa-instagram"></i> Instagram
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" href="#" target="_blank">
+                  <i class="fab fa-tiktok"></i> TikTok
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/app.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
