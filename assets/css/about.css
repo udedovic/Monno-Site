@@ -30,6 +30,11 @@
   border-radius: 20px;
 }
 
+.about p {
+  font-size: 1.5rem;
+  font-family: "Poppins-Regular";
+}
+
 @media (max-width: 1000px) {
   .bottom-section .row {
     flex-wrap: nowrap; /* Sprečava prelazak u novi red */
