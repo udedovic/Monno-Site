@@ -13,14 +13,13 @@
 }
 
 .bottom-section {
-  overflow-x: auto; /* Omogućava horizontalno skrolovanje */
-  -webkit-overflow-scrolling: touch; /* Poboljšava skrolovanje na mobilnim uređajima */
+  overflow-x: auto; /* Allows horizontal scrolling */
 }
 
 .profile {
-  flex: 0 0 auto; /* Sprečava automatsko rastezanje profila */
-  max-width: 100%; /* Postavlja maksimalnu širinu profila */
-  padding: 0 10px; /* Dodaje malo prostora između profila */
+  flex: 0 0 auto; /* Prevents profiles from auto stretching */
+  max-width: 100%; /* Sets the maximum width of the profile */
+  padding: 0 10px; /* Adds some space between profiles */
 }
 
 .profile img {
@@ -35,14 +34,21 @@
   font-family: "Poppins-Regular";
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 500px) {
+  .about p {
+    font-size: 1rem;
+    font-family: "Poppins-Regular";
+  }
+
   .bottom-section .row {
-    flex-wrap: nowrap; /* Sprečava prelazak u novi red */
-    justify-content: flex-start; /* Postavlja poravnanje na početak */
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: center; 
   }
 
   .bottom-section .profile {
-    flex: 0 0 100%; /* Postavlja širinu profila na 100% */
-    max-width: 100%; /* Postavlja maksimalnu širinu profila */
+    flex: 0 0 100%; /* Sets the width of the profile to 100% */
+    max-width: 100%; /* Sets the maximum width of the profile */
+    padding: 10px 0; /* Adds vertical padding for separation */
+    margin-bottom: 10px;/* Centers the items */
   }
 }

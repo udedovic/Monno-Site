@@ -1,10 +1,17 @@
-const hamburgerToggle = document.querySelector("#hamburger-toggle");
-const navbar = document.querySelector("#navbar");
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("header.html")
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("navbar-container").innerHTML = data;
 
-hamburgerToggle.addEventListener("click", onHamburgerClick);
+      const script = document.createElement("script");
+      script.src = "../assets/js/navbar.js";
+      document.body.appendChild(script);
+    });
 
-function onHamburgerClick() {
-  navbar.classList.contains("open")
-    ? navbar.classList.remove("open")
-    : navbar.classList.add("open");
-}
+  fetch("footer.html")
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("footer-container").innerHTML = data;
+    });
+});

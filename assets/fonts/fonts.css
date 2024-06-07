@@ -12,3 +12,8 @@
   font-family: "Poppins-SemiBold";
   src: url("../fonts/Poppins-FONT/Poppins-SemiBold.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Poppins-Thin-Italic";
+  src: url("../fonts/Poppins-FONT/Poppins-ThinItalic.ttf") format("truetype");
+}
