@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("header.html")
+  fetch("docs/header.html")
     .then((response) => response.text())
     .then((data) => {
       document.getElementById("navbar-container").innerHTML = data;
@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.body.appendChild(script);
     });
 
-  fetch("footer.html")
+  fetch("docs/footer.html")
     .then((response) => response.text())
     .then((data) => {
       document.getElementById("footer-container").innerHTML = data;
