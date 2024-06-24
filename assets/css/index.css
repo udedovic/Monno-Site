@@ -108,7 +108,7 @@ a {
 }
 
 .image-gallery::-webkit-scrollbar-thumb {
-  background-color: rgb(223, 189, 144); /* Boja scrollbara */
+  background-color: rgb(223, 189, 144) !important; /* Boja scrollbara */
   border-radius: 10px; /* Zaobljeni scrollbar */
 }
 
@@ -185,7 +185,7 @@ a {
   }
 
   .full-width-image {
-    height: 70vh;
+    height: 40vh;
   }
 
   .col-md-6 {
@@ -209,8 +209,7 @@ a {
   }
 
   .full-width-image {
-    height: 70vh; /* Adjusted height */
-    object-fit: cover; /* Maintain cover for better height */
+    object-fit: contain; /* Maintain cover for better height */
   }
 }
 
@@ -233,6 +232,10 @@ a {
   .carousel-item img {
     height: 50vh;
     object-fit: cover; /* Maintain cover for better height */
+  }
+
+  #footer-container{
+    font-size: 0.7rem !important;
   }
 }
 
