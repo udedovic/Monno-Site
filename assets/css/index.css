@@ -151,6 +151,11 @@ a {
   object-fit: cover;
 }
 
+.footer-img img {
+  width: 100px;
+  height: 100px;
+}
+
 @media only screen and (max-width: 1200px) {
   .carousel-caption {
     top: 80%;
@@ -211,6 +216,20 @@ a {
   .full-width-image {
     object-fit: contain; /* Maintain cover for better height */
   }
+
+  footer .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .row .col-4 {
+    width: 100%;
+    align-items: center;
+  }
+
+  footer .navbar-nav:last-child{
+    margin-top: 20px;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -232,10 +251,6 @@ a {
   .carousel-item img {
     height: 50vh;
     object-fit: cover; /* Maintain cover for better height */
-  }
-
-  #footer-container{
-    font-size: 0.7rem !important;
   }
 }
 
