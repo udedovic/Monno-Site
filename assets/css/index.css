@@ -44,57 +44,7 @@ a {
   transform: translate(-50%, -50%) rotateY(0);
 }
 
-@media only screen and (max-width: 1200px) {
-  .carousel-caption {
-    top: 75%;
-    font-size: 5rem;
-  }
-  .carousel-item img {
-    height: 90vh;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .carousel-caption {
-    top: 70%;
-    font-size: 1.25rem;
-  }
-  .carousel-item img {
-    height: 80vh;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .carousel-caption {
-    top: 65%;
-    font-size: 1rem;
-  }
-  .carousel-item img {
-    height: 70vh;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .carousel-caption {
-    top: 60%;
-    font-size: 0.875rem;
-  }
-  .carousel-item img {
-    height: 60vh;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .carousel-caption {
-    top: 55%;
-    font-size: 0.75rem;
-  }
-  .carousel-item img {
-    height: 50vh;
-  }
-}
-
-/* 4 slike manje*/
+/* 4 slike manje */
 .image-container {
   position: relative;
   width: 100%;
@@ -142,24 +92,38 @@ a {
   margin-top: 1rem;
 }
 
-@media (max-width: 991.98px) {
-  .col-6 {
-    flex: 0 0 50%; /* Dve slike u redu na manjim ekranima */
-  }
-}
-/* 4 slike manje*/
-
-/* 4 slike vece*/
+/* 4 slike veće */
 .image-gallery {
   display: flex;
   overflow-x: auto; /* Omogućava horizontalni skrol */
   height: 70vh; /* Visina slika */
-  scrollbar-width: none; /* Firefox - Sakriva skrol traku */
-  -ms-overflow-style: none; /* Internet Explorer i Edge - Sakriva skrol traku */
+  scrollbar-width: thin; /* Firefox - tanji scrollbar */
+  scrollbar-color: rgb(223, 189, 144) transparent; /* Firefox - boje scrollbara */
 }
 
+/* Stilovi za WebKit preglednike (Chrome, Safari, Opera) */
 .image-gallery::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera - Sakriva skrol traku */
+  width: 4px; /* Tanji scrollbar za Chrome, Safari, Opera */
+  height: 4px; /* Tanji horizontalni scrollbar */
+}
+
+.image-gallery::-webkit-scrollbar-thumb {
+  background-color: rgb(223, 189, 144); /* Boja scrollbara */
+  border-radius: 10px; /* Zaobljeni scrollbar */
+}
+
+.image-gallery::-webkit-scrollbar-track {
+  background: transparent; /* Pozadina trake scrollbara */
+}
+
+/* Specifično za WebKit preglednike - uvek prikazuje scrollbar */
+.image-gallery {
+  -webkit-overflow-scrolling: auto;
+}
+
+/* Osigurava da scrollbar bude uvek vidljiv na svim uređajima */
+.image-gallery {
+  overflow: scroll; /* Uvek prikazuje scrollbar */
 }
 
 .image-row {
@@ -179,21 +143,7 @@ a {
   display: block;
 }
 
-/* Medija upiti za prilagođavanje različitim veličinama ekrana */
-@media only screen and (max-width: 1000px) {
-  .image-col {
-    flex: 0 0 50%; /* Svaka slika zauzima 50% širine kontejnera na manjim ekranima */
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .image-col {
-    flex: 0 0 100%; /* Svaka slika zauzima 100% širine kontejnera na najmanjim ekranima */
-  }
-}
-/* 4 slike vece*/
-
-/* full width slika*/
+/* Full width slika */
 .full-width-image {
   overflow: hidden;
   max-width: 100%;
@@ -202,26 +152,91 @@ a {
 }
 
 @media only screen and (max-width: 1200px) {
+  .carousel-caption {
+    top: 80%;
+  }
+
+  .carousel-item img {
+    height: 90vh;
+  }
+
   .full-width-image {
     height: 80vh;
+  }
+
+  .col-lg-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .image-col {
+    flex: 0 0 50%; /* Svaka slika zauzima 50% širine kontejnera na manjim ekranima */
   }
 }
 
 @media only screen and (max-width: 992px) {
+  .carousel-caption {
+    top: 80%;
+    font-size: 1.25rem;
+  }
+
+  .carousel-item img {
+    height: 80vh;
+  }
+
   .full-width-image {
     height: 70vh;
+  }
+
+  .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
   }
 }
 
 @media only screen and (max-width: 768px) {
+  .carousel-caption {
+    top: 85%;
+  }
+
+  .carousel-item img {
+    height: 70vh;
+  }
+
+  .carousel-caption span {
+    font-size: 3rem;
+  }
+
   .full-width-image {
-    height: 60vh;
-    object-fit: contain;
+    height: 70vh; /* Adjusted height */
+    object-fit: cover; /* Maintain cover for better height */
   }
 }
-/* full width slika*/
 
-@media (max-width: 1000px) {
+@media only screen and (max-width: 576px) {
+  .carousel-item img {
+    height: 60vh;
+    object-fit: cover; /* Maintain cover for better height */
+  }
+
+  .carousel-caption span {
+    font-size: 2rem;
+  }
+
+  .image-col {
+    flex: 0 0 100%; /* Svaka slika zauzima 100% širine kontejnera na najmanjim ekranima */
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .carousel-item img {
+    height: 50vh;
+    object-fit: cover; /* Maintain cover for better height */
+  }
+}
+
+@media only screen and (max-width: 1000px) {
   .carousel {
     height: 80vh; /* Visina 80vh kada je širina prozora manja ili jednaka 1000px */
   }
@@ -230,19 +245,9 @@ a {
     height: 80vh;
   }
 
-  .container {
-    overflow-x: auto; /* Omogućava horizontalno skrolovanje */
-    -webkit-overflow-scrolling: touch; /* Poboljšava skrolovanje na mobilnim uređajima */
-  }
-
-  /* Sakrivanje scrollbar-a */
-  .container::-webkit-scrollbar {
-    display: none; /* Sakriva scrollbar u WebKit preglednicima (Chrome, Safari) */
-  }
-
-  .container {
-    -ms-overflow-style: none; /* IE i Edge */
-    scrollbar-width: none; /* Firefox */
+  .four-images .container .row {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
