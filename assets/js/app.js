@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (element) {
           element.scrollIntoView({ behavior: "smooth", block: "center" });
         }
-      }, 1500);
+      }, 700);
     }
   }
 
