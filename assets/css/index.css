@@ -121,11 +121,6 @@ a {
   -webkit-overflow-scrolling: auto;
 }
 
-/* Osigurava da scrollbar bude uvek vidljiv na svim uređajima */
-.image-gallery {
-  overflow: scroll; /* Uvek prikazuje scrollbar */
-}
-
 .image-row {
   display: flex;
   flex-wrap: nowrap;
